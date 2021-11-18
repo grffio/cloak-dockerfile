@@ -21,12 +21,12 @@ $ docker run --name cloak -d -p 443:443/tcp                       \
              grffio/cloak
 ```
 - Supported Environment variables:
-  - `CK_PROXYBOOK_<ProxyMethod>` - A list of ProxyMethod and endpoint of the upstream proxy server, format: '<protocol>://<host>:<port>' (required)
+  - `CK_PROXYBOOK_<ProxyMethod>` - A list of ProxyMethod and endpoint of the upstream proxy server, format: '\<protocol\>://\<host\>:\<port\>' (required)
   - `CK_PRIVATEKEY`   - The static private key encoded in base64 (default: auto generation)
   - `CK_PUBLICKEY`    - The static public key encoded in base64, if specified, it is displayed in the client configuration (default: auto generation)
-  - `CK_BYPASSUID`    - A list of unrestricted users UIDs, '<UID1>,<UID1>' (default: auto generation)
+  - `CK_BYPASSUID`    - A list of unrestricted users UIDs, '\<UID1\>,\<UID1\>' (default: auto generation)
   - `CK_ADMINUID`     - The UID of the admin user (default: auto generation)
-  - `CK_BINDADDR`     - A list of addresses Cloak will bind and listen, format '<IP:PORT1>,<IP:PORT2>' (default: 0.0.0.0:443)
+  - `CK_BINDADDR`     - A list of addresses Cloak will bind and listen, format '\<IP:PORT1\>,\<IP:PORT2\>' (default: 0.0.0.0:443)
   - `CK_REDIRADDR`    - The redirection address when the incoming traffic is not from a Cloak client  (default: bing.com)
   - `CK_DATABASEPATH` - The path to userinfo.db (default: /opt/cloak/userinfo.db)
   - `CK_KEEPALIVE`    - The number of seconds to tell the OS to wait after no activity before sending TCP KeepAlive probes to the upstream proxy server (default: 0)
